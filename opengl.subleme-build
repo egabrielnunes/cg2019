@@ -1,0 +1,6 @@
+{
+    "cmd": [ "g++ \"$file\" -o \"$file_base_name\" -lGLU -lGL -lglut && ./\"$file_base_name\""],
+    "working_dir": "${project_path:${folder}}",
+    "selector": ["source.c++"],
+    "shell": true
+}
