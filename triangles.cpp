@@ -4,16 +4,12 @@
 
 void init(void)
 {
-       //Seta a janela (background) na cor Branca
        glClearColor(0.0,0.0,0.0,0.0);
-       //Parâmetros de projeção BI-Dimensional
        glMatrixMode(GL_PROJECTION);
        gluOrtho2D(0.0,1.0,0.0,1.0);
        glMatrixMode(GL_MODELVIEW);
        
 }
-
-
 
 void drawGrid(void)
 {
@@ -61,18 +57,17 @@ void drawGrid(void)
 			glVertex2f(0.5, 0.5);
 	    glEnd();
 
+    	glPushMatrix();
+		    glTranslatef(-0.25,0.0,0.0);
+		    glScalef(2.0,1.0,1.0);
+			glTranslatef(0.25,0.0,0.0);
 
-	    glTranslated(-0.25,0.0)
-	    glEscaleted()
-		glTranslated(0.25,0.0)
-	    
-
-	    glBegin(GL_TRIANGLES);
-			glVertex2f(0.25,0.0);
-			glVertex2f(0.5,0.0);
-			glVertex2f(0.5, 0.5);
-	    glEnd();
-
+		    glBegin(GL_TRIANGLES);
+				glVertex2f(0.25,0.0);
+				glVertex2f(0.5,0.0);
+				glVertex2f(0.5, 0.5);
+		    glEnd();
+		glPopMatrix();
      
        glFlush();
 
