@@ -1,4 +1,4 @@
-# Install script for directory: /Users/gabrielnunes/Developer/CG/Projeto CG
+# Install script for directory: /Users/gabrielnunes/Developer/cg2019/Projeto Quarto/Projeto CG
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/gabrielnunes/Developer/CG/Projeto CG/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/gabrielnunes/Developer/cg2019/Projeto Quarto/Projeto CG/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

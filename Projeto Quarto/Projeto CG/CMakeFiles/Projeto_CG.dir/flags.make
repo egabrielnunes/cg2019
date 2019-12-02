@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/Users/gabrielnunes/Developer/CG/Projeto CG/." -isystem /usr/local/Cellar/sfml/2.5.1/include 
+CXX_INCLUDES = -I"/Users/gabrielnunes/Developer/cg2019/Projeto Quarto/Projeto CG/." -isystem /usr/local/Cellar/sfml/2.5.1/include 
 
