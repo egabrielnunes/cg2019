@@ -565,6 +565,183 @@ void drawPrateleira2() {
 
 }
 
+void drawPrateleira3() {
+
+    //cima
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.9, -5.5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.9, -3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.7,-0.9, -3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.9, -5.5);
+    glEnd();
+
+
+    //baixo
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.95, -5.5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2, -0.95, -3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.7, -0.95, -3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7, -0.95, -5.5);
+    glEnd();
+
+    //lateral da frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.7,-0.9,-3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.9,-3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.95,-3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.95,-3);
+    glEnd();
+
+
+    //lateral de tras
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.7,-0.9,-5.5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.9,-5.5);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.95,-5.5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.95,-5.5);
+    glEnd();
+
+    //frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.7,-0.9,-5.5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.7,-0.9,-3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.7,-0.95,-3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.95,-5.5);
+    glEnd();
+
+}
+
+void drawPrateleira4() {
+
+    //cima
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.75, -4);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.75, -1.5);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.7,-0.75, -1.5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.75, -4);
+    glEnd();
+    
+    //baixo
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.8, -4);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2, -0.8, -1.5);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.7, -0.8, -1.5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7, -0.8, -4);
+    glEnd();
+
+    //lateral da frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.7,-0.75,-1.5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.75,-1.5);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.8,-1.5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.8,-1.5);
+    glEnd();
+
+
+    //lateral de tras
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.7,-0.75,-4);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.75,-4);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.8,-4);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.8,-4);
+    glEnd();
+
+    //frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.7,-0.75,-4);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.7,-0.75,-1.5);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.7,-0.8,-1.5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.7,-0.8,-4);
+    glEnd();
+
+}
+
 void drawCriado() {
 
     //cama
@@ -694,6 +871,8 @@ void drawBedroom(){
 
     drawPrateleira1();
     drawPrateleira2();
+    drawPrateleira3();
+    drawPrateleira4();
     drawCriado();
     drawRHCP();
     drawBed();
