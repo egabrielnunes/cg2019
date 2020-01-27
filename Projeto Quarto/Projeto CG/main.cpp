@@ -261,6 +261,7 @@ void drawHP1(){
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(-1.9,-0.3,-4.3);
     glEnd();
+
 }
 
 
@@ -938,7 +939,7 @@ void drawDoor() {
     glTranslatef(-1.8, 0.65f, 1);
     glRotatef (door_angle, 0,1,0);
     glTranslatef(0.8, 0, 0);
-    glColor3f(0.0f, 0.5f, 0.0f);
+    glColor3f(0.5f, 0.5f, 0.5f);
     glScalef(0.6, 1.1, 0.1f);
     glutSolidCube(1.0);
     glPopMatrix();
@@ -976,9 +977,9 @@ void renderScene(void){
     // Set the camera
     gluLookAt(x, 1.0f, z, x+lx, 1.0f, z+lz, 0.0f, 1.0f, 0.0f);
 
+    drawDoor();
     drawGround();
     drawBedroom();
-    drawDoor();
 
     glFlush();
     glutSwapBuffers();
