@@ -194,6 +194,8 @@ void loadTextures() {
 	loadTextureFromFile("rhcp.jpeg", 13);
 	loadTextureFromFile("criado.jpeg", 14);
 	loadTextureFromFile("branco.jpg", 15);
+	loadTextureFromFile("hp1.jpeg", 16);
+	loadTextureFromFile("hp2.jpeg", 17);
 
 }
 

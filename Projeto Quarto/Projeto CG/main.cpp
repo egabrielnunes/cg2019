@@ -241,6 +241,50 @@ void drawRHCP(){
     glEnd();
 }
 
+
+void drawHP1(){
+    //hp1
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glPushMatrix();
+
+    glBindTexture(GL_TEXTURE_2D, texture_id[16]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.9,0.2,-4.3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.9,0.2,-4.8);
+
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.9,-0.3,-4.8);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.9,-0.3,-4.3);
+    glEnd();
+}
+
+
+void drawHP2(){
+    //hp2
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glPushMatrix();
+
+    glBindTexture(GL_TEXTURE_2D, texture_id[17]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.9,0.2,-5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.9,0.2,-5.5);
+
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.9,-0.3,-5.5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.9,-0.3,-5);
+    glEnd();
+}
+
 //DONE
 void drawFront(){
 
@@ -871,6 +915,8 @@ void drawBedroom(){
     glColor3f(0.7f, 0.7f, 0.7f);
     glLineWidth(2.5);
 
+    drawHP1();
+    drawHP2();
     drawPrateleira1();
     drawPrateleira2();
     drawPrateleira3();
@@ -886,7 +932,6 @@ void drawBedroom(){
     window();
     drawCloset();
 }
-
 
 void drawDoor() {
     glPushMatrix();
