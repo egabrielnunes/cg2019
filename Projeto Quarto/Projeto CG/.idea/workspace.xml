@@ -11,13 +11,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/livros.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Projeto_CG" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto_CG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-    </list>
+    <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,13 +26,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="943" column="17" selection-start-line="943" selection-start-column="4" selection-end-line="943" selection-end-column="17" />
+            <state relative-caret-position="746">
+              <caret line="1045" column="31" selection-start-line="1045" selection-start-column="31" selection-end-line="1045" selection-end-column="31" />
               <folding>
                 <element signature="e#223#1585#0" />
                 <element signature="e#1587#2763#0" />
                 <element signature="e#2765#3774#0" />
                 <element signature="e#5604#7455#0" />
+                <element signature="e#5447#5858#0" />
+                <element signature="e#5868#6286#0" />
+                <element signature="e#6289#6707#0" />
                 <element signature="e#7457#9540#0" />
                 <element signature="e#11401#12597#0" />
                 <element signature="e#14666#19675#0" />
@@ -50,8 +47,10 @@
                 <element signature="e#9394#10888#0" />
                 <element signature="e#9003#9397#0" />
                 <element signature="e#20074#20388#0" />
+                <element signature="e#20390#20633#0" />
                 <element signature="e#20635#20886#0" />
                 <element signature="e#20888#21151#0" />
+                <element signature="e#21153#21436#0" />
                 <element signature="e#21438#21831#0" />
                 <element signature="e#21833#22432#0" />
                 <element signature="e#22434#22953#0" />
@@ -210,12 +209,12 @@
       <workItem from="1554263166207" duration="4434000" />
       <workItem from="1554268174088" duration="12610000" />
       <workItem from="1575318759050" duration="712000" />
-      <workItem from="1580073491087" duration="16853000" />
+      <workItem from="1580073491087" duration="17495000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92179000" />
+    <option name="totallyTimeSpent" value="92821000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -369,13 +368,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="943" column="17" selection-start-line="943" selection-start-column="4" selection-end-line="943" selection-end-column="17" />
+        <state relative-caret-position="746">
+          <caret line="1045" column="31" selection-start-line="1045" selection-start-column="31" selection-end-line="1045" selection-end-column="31" />
           <folding>
             <element signature="e#223#1585#0" />
             <element signature="e#1587#2763#0" />
             <element signature="e#2765#3774#0" />
             <element signature="e#5604#7455#0" />
+            <element signature="e#5447#5858#0" />
+            <element signature="e#5868#6286#0" />
+            <element signature="e#6289#6707#0" />
             <element signature="e#7457#9540#0" />
             <element signature="e#11401#12597#0" />
             <element signature="e#14666#19675#0" />
@@ -387,8 +389,10 @@
             <element signature="e#9394#10888#0" />
             <element signature="e#9003#9397#0" />
             <element signature="e#20074#20388#0" />
+            <element signature="e#20390#20633#0" />
             <element signature="e#20635#20886#0" />
             <element signature="e#20888#21151#0" />
+            <element signature="e#21153#21436#0" />
             <element signature="e#21438#21831#0" />
             <element signature="e#21833#22432#0" />
             <element signature="e#22434#22953#0" />

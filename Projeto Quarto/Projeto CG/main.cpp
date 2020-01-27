@@ -53,6 +53,7 @@ void init(void) {
 
 }
 
+//Parte de trás do Quarto
 void drawBack(){
 
     //============== BEGIN BACK ==================
@@ -77,6 +78,7 @@ void drawBack(){
 
 }
 
+//Laterais do Quarto
 void drawSides(){
     //============== BEGIN LATERAIS ===================
 
@@ -119,7 +121,7 @@ void drawSides(){
     //============== END LATERAIS ===================
 }
 
-//DONE
+//Televisão
 void drawTv(){
 
     glPopMatrix();
@@ -220,6 +222,7 @@ void drawTv(){
 
 }
 
+//Quadro RHCP
 void drawRHCP(){
     //rhcp
     glColor3f(1.0f, 1.0f, 1.0f);
@@ -241,7 +244,7 @@ void drawRHCP(){
     glEnd();
 }
 
-
+//Quadro HP 1
 void drawHP1(){
     //hp1
     glColor3f(1.0f, 1.0f, 1.0f);
@@ -264,7 +267,7 @@ void drawHP1(){
 
 }
 
-
+//Quadro HP 2
 void drawHP2(){
     //hp2
     glColor3f(1.0f, 1.0f, 1.0f);
@@ -286,7 +289,7 @@ void drawHP2(){
     glEnd();
 }
 
-//DONE
+//Frente do Quarto
 void drawFront(){
 
     //right wall
@@ -346,7 +349,7 @@ void drawFront(){
 
 }
 
-//DONE
+//Janela do Quarto
 void window(){
 
     //janela
@@ -366,6 +369,7 @@ void window(){
     glEnd();
 }
 
+//Guarda Roupa
 void drawCloset(){
 
     //guarda roupa frente
@@ -405,6 +409,7 @@ void drawCloset(){
     glPopMatrix();
 }
 
+//Piso do Quarto
 void drawFloor(){
 
     glBindTexture(GL_TEXTURE_2D, texture_id[0]);
@@ -434,6 +439,7 @@ void drawFloor(){
     glEnd();
 }
 
+//Prateleira 1
 void drawPrateleira1() {
 
     //cima
@@ -523,6 +529,7 @@ void drawPrateleira1() {
 
 }
 
+//Prateleira 2
 void drawPrateleira2() {
 
     //cima
@@ -612,6 +619,7 @@ void drawPrateleira2() {
 
 }
 
+//Prateleira 3
 void drawPrateleira3() {
 
     //cima
@@ -701,6 +709,7 @@ void drawPrateleira3() {
 
 }
 
+//Prateleira 4
 void drawPrateleira4() {
 
     //cima
@@ -789,6 +798,7 @@ void drawPrateleira4() {
 
 }
 
+//Criado Mudo
 void drawCriado() {
 
     //cama
@@ -840,6 +850,7 @@ void drawCriado() {
 
 }
 
+//Cama
 void drawBed() {
 
     //cama
@@ -909,6 +920,7 @@ void drawBed() {
 
 }
 
+//Desenha itens do quarto
 void drawBedroom(){
 
     glPushMatrix();
@@ -934,6 +946,7 @@ void drawBedroom(){
     drawCloset();
 }
 
+//Porta
 void drawDoor() {
     glPushMatrix();
     glTranslatef(-1.8, 0.65f, 1);
