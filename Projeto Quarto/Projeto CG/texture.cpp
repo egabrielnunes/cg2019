@@ -188,11 +188,12 @@ void loadTextures() {
 	loadTextureFromFile("tv.jpg", 7);
 	loadTextureFromFile("teto.jpeg", 8);
 	loadTextureFromFile("janela1.jpeg", 9);
-	loadTextureFromFile("roupa.jpeg", 10);
+	loadTextureFromFile("roupa2.jpg", 10);
 	loadTextureFromFile("madeira.jpeg", 11);
 	loadTextureFromFile("cama.jpeg", 12);
 	loadTextureFromFile("rhcp.jpeg", 13);
 	loadTextureFromFile("criado.jpeg", 14);
+	loadTextureFromFile("branco.jpg", 15);
 
 }
 

@@ -329,24 +329,27 @@ void drawCloset(){
     glBindTexture(GL_TEXTURE_2D, texture_id[10]);
     glBegin(GL_QUADS);  // Wall
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(1.9,0.2,-0.2);
+    glVertex3f(1.9,0.45,-0.2);
+
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(-0.3,0.2,-0.2);
+    glVertex3f(-0.3,0.5,-0.2);
+
     glTexCoord2f(1.0f, 0.0f);
     glVertex3f(-0.3,-1.5,-0.2);
+
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(1.9,-1.5,-0.2);
     glEnd();
 
     //lateral guarda roupa
-    glColor3f(1.0f, 1.0f, 1.0f);
     glPushMatrix();
-    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glBindTexture(GL_TEXTURE_2D, texture_id[15]);
     glBegin(GL_QUADS);
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-0.3,0.2,1);
+    glVertex3f(-0.3,0.5,1);
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(-0.3,0.2,-0.2);
+    glVertex3f(-0.3,0.5,-0.2);
     glTexCoord2f(1.0f, 0.0f);
     glVertex3f(-0.3,-1.5,-0.2);
     glTexCoord2f(0.0f, 0.0f);
@@ -385,7 +388,6 @@ void drawFloor(){
     glVertex3f( 2.0f, 0.5f, -6.0f);
     glEnd();
 }
-
 
 void drawPrateleira1() {
 
@@ -671,7 +673,7 @@ void drawPrateleira4() {
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(-1.7,-0.75, -4);
     glEnd();
-    
+
     //baixo
     glBindTexture(GL_TEXTURE_2D, texture_id[11]);
     glBegin(GL_QUADS);
@@ -911,7 +913,7 @@ void changeSize(int w, int h){
 
 void drawGround(){
     // Draw ground
-    glColor3f(1, 1, 1);
+    glColor3f(0.5, 0.5, 0.5);
     glBegin(GL_QUADS);
     glVertex3f(-100.0f, 0.0f, -100.0f);
     glVertex3f(-100.0f, 0.0f, 100.0f);
