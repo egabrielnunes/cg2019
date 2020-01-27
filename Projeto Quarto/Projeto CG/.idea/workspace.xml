@@ -12,23 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cama.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/criado.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/janela.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/janela1.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/madeira.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/parede1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/piso.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rhcp.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/roupa.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teto.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/teto.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tv.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ground.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/ground.jpeg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/texture.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wall.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wall.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -44,14 +29,15 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="398" column="18" selection-start-line="398" selection-start-column="18" selection-end-line="398" selection-end-column="18" />
+            <state relative-caret-position="302">
+              <caret line="562" column="22" selection-start-line="562" selection-start-column="22" selection-end-line="562" selection-end-column="22" />
               <folding>
                 <element signature="e#223#1585#0" />
                 <element signature="e#1587#2763#0" />
                 <element signature="e#2765#3774#0" />
                 <element signature="e#7457#9540#0" />
                 <element signature="e#11401#12597#0" />
+                <element signature="e#9394#10529#0" />
                 <element signature="e#9394#10888#0" />
                 <element signature="e#9003#9397#0" />
                 <element signature="e#20635#20886#0" />
@@ -213,12 +199,12 @@
       <workItem from="1554263166207" duration="4434000" />
       <workItem from="1554268174088" duration="12610000" />
       <workItem from="1575318759050" duration="712000" />
-      <workItem from="1580073491087" duration="13326000" />
+      <workItem from="1580073491087" duration="13859000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="88652000" />
+    <option name="totallyTimeSpent" value="89185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -372,14 +358,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="398" column="18" selection-start-line="398" selection-start-column="18" selection-end-line="398" selection-end-column="18" />
+        <state relative-caret-position="302">
+          <caret line="562" column="22" selection-start-line="562" selection-start-column="22" selection-end-line="562" selection-end-column="22" />
           <folding>
             <element signature="e#223#1585#0" />
             <element signature="e#1587#2763#0" />
             <element signature="e#2765#3774#0" />
             <element signature="e#7457#9540#0" />
             <element signature="e#11401#12597#0" />
+            <element signature="e#9394#10529#0" />
             <element signature="e#9394#10888#0" />
             <element signature="e#9003#9397#0" />
             <element signature="e#20635#20886#0" />

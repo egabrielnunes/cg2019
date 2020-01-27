@@ -389,7 +389,7 @@ void drawFloor(){
 
 void drawPrateleira1() {
 
-    //tampa
+    //cima
     glBindTexture(GL_TEXTURE_2D, texture_id[11]);
     glBegin(GL_QUADS);
     glTexCoord2f(0.0f, 1.0f);
@@ -403,6 +403,23 @@ void drawPrateleira1() {
 
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(2.0f, 0, -5);
+    glEnd();
+
+
+    //baixo
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.7f, -0.05, -5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.7f, -0.05, -3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(2.0f, -0.05, -3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2.0f, -0.05, -5);
     glEnd();
 
     //lateral da frente
@@ -442,19 +459,108 @@ void drawPrateleira1() {
 
     //frente
     glPushMatrix();
-    glBindTexture(GL_TEXTURE_2D, texture_id[14]);
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
     glBegin(GL_QUADS);  // Wall
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(1.5,-0.6,-6);
+    glVertex3f(1.7,0,-5);
 
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(1.5,-0.6,-5.1);
+    glVertex3f(1.7,0,-3);
 
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(1.5,-1.5,-5.1);
+    glVertex3f(1.7,-0.05,-3);
 
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(1.5,-1.5,-6);
+    glVertex3f(1.7,-0.05,-5);
+    glEnd();
+
+}
+
+void drawPrateleira2() {
+
+    //cima
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.7f, 0.3, -5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.7f, 0.3, -3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(2.0f, 0.3, -3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2.0f, 0.3, -5);
+    glEnd();
+
+
+    //baixo
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.7f, 0.25, -5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.7f, 0.25, -3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(2.0f, 0.25, -3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2.0f, 0.25, -5);
+    glEnd();
+
+    //lateral da frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(2,0.3,-3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.7,0.3,-3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.7,0.25,-3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2,0.25,-3);
+    glEnd();
+
+
+    //lateral de tras
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(2,0.3,-5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.7,0.3,-5);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.7,0.25,-5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2,0.25,-5);
+    glEnd();
+
+    //frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.7,0.3,-5);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.7,0.3,-3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.7,0.25,-3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(1.7,0.25,-5);
     glEnd();
 
 }
@@ -587,6 +693,7 @@ void drawBedroom(){
     glLineWidth(2.5);
 
     drawPrateleira1();
+    drawPrateleira2();
     drawCriado();
     drawRHCP();
     drawBed();
