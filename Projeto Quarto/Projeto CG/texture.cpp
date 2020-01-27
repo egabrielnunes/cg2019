@@ -83,8 +83,6 @@ void drawCube(GLdouble size, int *tex) {
 
 }
 
-
-
 void faceCubeConstructor(double size, int face, int texture) {
 	
     double position = size/2;
@@ -196,6 +194,11 @@ void loadTextures() {
 	loadTextureFromFile("branco.jpg", 15);
 	loadTextureFromFile("hp1.jpeg", 16);
 	loadTextureFromFile("hp2.jpeg", 17);
+	loadTextureFromFile("rhcp2.jpeg", 18);
+	loadTextureFromFile("madeiraclara.jpg", 19);
+	loadTextureFromFile("frentecaixa.jpg", 20);
+	loadTextureFromFile("frentejogos.jpg", 21);
+	loadTextureFromFile("cimajogos.jpeg", 22);
+	loadTextureFromFile("macbook.jpeg", 23);
 
 }
-

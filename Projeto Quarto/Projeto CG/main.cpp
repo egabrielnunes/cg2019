@@ -222,7 +222,7 @@ void drawTv(){
 
 }
 
-//Quadro RHCP
+//Quadro RHCP 1
 void drawRHCP(){
     //rhcp
     glColor3f(1.0f, 1.0f, 1.0f);
@@ -242,6 +242,29 @@ void drawRHCP(){
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(-1.9,-0.3,-0.5);
     glEnd();
+}
+
+//Camisa RHCP
+void drawRHCP2(){
+    //hp1
+    glColor3f(1.0f, 1.0f, 1.0f);
+    glPushMatrix();
+
+    glBindTexture(GL_TEXTURE_2D, texture_id[18]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.69,-0.9,-3.3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.69,-0.9,-3.5);
+
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.69,-1.2,-3.5);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.69,-1.2,-3.3);
+    glEnd();
+
 }
 
 //Quadro HP 1
@@ -798,6 +821,184 @@ void drawPrateleira4() {
 
 }
 
+//Caixa
+void drawCaixa() {
+
+    //cima
+    glBindTexture(GL_TEXTURE_2D, texture_id[19]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.65, -2.3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.65, -2);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.8,-0.65, -2);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.65, -2.3);
+    glEnd();
+
+    //baixo
+    glBindTexture(GL_TEXTURE_2D, texture_id[19]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.75, -2.3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2, -0.75, -2);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.8, -0.75, -2);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8, -0.75, -2.3);
+    glEnd();
+
+    //lateral da frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[19]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-2);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.65,-2);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.75,-2);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-2);
+    glEnd();
+
+
+    //lateral de tras
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[19]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-2.3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.65,-2.3);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.75,-2.3);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-2.3);
+    glEnd();
+
+    //frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[20]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-2.3);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-2);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-2);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-2.3);
+    glEnd();
+
+}
+
+//Jogos
+void drawJogos() {
+
+    //cima
+    glBindTexture(GL_TEXTURE_2D, texture_id[22]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.65, -1.9);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.65, -1.7);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.8,-0.65, -1.7);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.65, -1.9);
+    glEnd();
+
+    //baixo
+    glBindTexture(GL_TEXTURE_2D, texture_id[19]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2, -0.75, -1.9);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2, -0.75, -1.7);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.8, -0.75, -1.7);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8, -0.75, -1.9);
+    glEnd();
+
+    //lateral da frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[21]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-1.7);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.65,-1.7);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.75,-1.7);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-1.7);
+    glEnd();
+
+
+    //lateral de tras
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[21]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-1.9);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-2,-0.65,-1.9);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-2,-0.75,-1.9);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-1.9);
+    glEnd();
+
+    //frente
+    glPushMatrix();
+    glBindTexture(GL_TEXTURE_2D, texture_id[21]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-1.9);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.8,-0.65,-1.7);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-1.7);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.8,-0.75,-1.9);
+    glEnd();
+
+}
+
 //Criado Mudo
 void drawCriado() {
 
@@ -928,6 +1129,9 @@ void drawBedroom(){
     glColor3f(0.7f, 0.7f, 0.7f);
     glLineWidth(2.5);
 
+    drawJogos();
+    drawCaixa();
+    drawRHCP2();
     drawHP1();
     drawHP2();
     drawPrateleira1();
@@ -946,7 +1150,7 @@ void drawBedroom(){
     drawCloset();
 }
 
-//Porta
+//Desenha a porta
 void drawDoor() {
     glPushMatrix();
     glTranslatef(-1.8, 0.65f, 1);
