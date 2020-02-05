@@ -63,7 +63,6 @@ void drawBack(){
     glTranslatef(0.0f, 1.3f, 0.0f);
     glColor3f(0.7f, 0.7f, 0.7f);
     glBindTexture(GL_TEXTURE_2D, texture_id[1]);
-
     glBegin(GL_QUADS);  // Wall
     glTexCoord2f(0.0f, 1.0f);
     glVertex3f(-2,0.5,-6);
@@ -73,6 +72,23 @@ void drawBack(){
     glVertex3f(2,-1.5,-6);
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(-2,-1.5,-6);
+    glEnd();
+
+    //rodape back
+    glPopMatrix();
+    glPushMatrix();
+    glTranslatef(0.0f, 1.3f, 0.0f);
+    glColor3f(0.7f, 0.7f, 0.7f);
+    glBindTexture(GL_TEXTURE_2D, texture_id[0]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2,-1.1f,-5.99f);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(2,-1.1f,-5.99f);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(2,-1.5,-5.99f);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-2,-1.5,-5.99f);
     glEnd();
 
 
@@ -422,8 +438,6 @@ void drawFront(){
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(-0.65f,-1.5f,0.89f);
     glEnd();
-
-
 
     //top door
     glBindTexture(GL_TEXTURE_2D, texture_id[1]);
