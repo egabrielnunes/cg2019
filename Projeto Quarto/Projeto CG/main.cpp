@@ -85,8 +85,6 @@ void drawSides(){
     // wall right side
     glPopMatrix();
     glPushMatrix();
-    glColor3f(0.7f, 0.7f, 0.7f);
-
     glTranslatef(0.0f, 1.3f, 0.0f);
     glBindTexture(GL_TEXTURE_2D, texture_id[1]);
     glBegin(GL_QUADS);
@@ -95,17 +93,31 @@ void drawSides(){
     glTexCoord2f(1.0f, 1.0f);
     glVertex3f(2,0.5,-6);
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(2,-1.5,-6);
+    glVertex3f(2,-1.5f,-6);
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(2,-1.5,1);
+    glVertex3f(2,-1.5f,1);
     glEnd();
     glPopMatrix();
 
+    // rodape right side
+    glPushMatrix();
+    glTranslatef(0.0f, 1.3f, 0.0f);
+    glBindTexture(GL_TEXTURE_2D, texture_id[0]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.999,-1.1f,1);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.999,-1.1f,-6);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.999,-1.5f,-6);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(1.999,-1.5f,1);
+    glEnd();
+    glPopMatrix();
 
     // wall left side
     glPushMatrix();
     glTranslatef(0.0f, 1.3f, 0.0f);
-    glColor3f(0.7f, 0.7f, 0.7f);
     glBindTexture(GL_TEXTURE_2D, texture_id[5]);
     glBegin(GL_QUADS);
     glTexCoord2f(0.0f, 1.0f);
@@ -113,9 +125,26 @@ void drawSides(){
     glTexCoord2f(1.0f, 1.0f);
     glVertex3f(-2,0.5,-6);
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(-2,-1.5,-6);
+    glVertex3f(-2,-1.5f,-6);
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(-2,-1.5,1);
+    glVertex3f(-2,-1.5f,1);
+    glEnd();
+
+    glPopMatrix();
+
+    // rodape left side
+    glPushMatrix();
+    glTranslatef(0.0f, 1.3f, 0.0f);
+    glBindTexture(GL_TEXTURE_2D, texture_id[0]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.999f,-1.1f,1);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.999f,-1.1f,-6);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.999f,-1.5f,-6);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.999f,-1.5f,1);
     glEnd();
 
     //============== END LATERAIS ===================
@@ -328,6 +357,20 @@ void drawFront(){
     glVertex3f(-0.7,-1.5,1);//bottom left
     glEnd();
 
+    //rodape right wall
+    glBindTexture(GL_TEXTURE_2D, texture_id[0]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-0.7f,-1.1f,0.99f);//top left
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(2.0f,-1.1f,0.99f);//top right
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(2.0f,-1.5,0.99f);//bottom right
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-0.7f,-1.5f,0.99f);//bottom left
+    glEnd();
+
+
     //left wall
     glBindTexture(GL_TEXTURE_2D, texture_id[1]);
     glBegin(GL_QUADS);
@@ -341,6 +384,46 @@ void drawFront(){
     glVertex3f(-2,-1.5,1);
     glEnd();
 
+    //rodape left wall
+    glBindTexture(GL_TEXTURE_2D, texture_id[24]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-2,-1.1f,0.99f);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.3,-1.1f,0.99f);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.3,-1.5,0.99f);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-2,-1.5,0.99f);
+    glEnd();
+
+    //modura porta left wall
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.35f,-0.1f,0.89f);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.3f,-0.1f,0.89f);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.3f,-1.5f,0.89f);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.35f,-1.5f,0.89f);
+    glEnd();
+
+    //modura porta left wall
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-0.65f,-0.1f,0.89f);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-0.7f,-0.1f,0.89f);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-0.7f,-1.5f,0.89f);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-0.65f,-1.5f,0.89f);
+    glEnd();
+
+
 
     //top door
     glBindTexture(GL_TEXTURE_2D, texture_id[1]);
@@ -353,6 +436,19 @@ void drawFront(){
     glVertex3f(-1.3, -0.1, 1);
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(0.8,-0.1, 1);
+    glEnd();
+
+    //moldura top door
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-0.65f, -0.05f, 0.89f);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-1.35f, -0.05f, 0.89f);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-1.35f, -0.1f, 0.89f);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-0.65f,-0.1f, 0.89f);
     glEnd();
 
     //bottom door

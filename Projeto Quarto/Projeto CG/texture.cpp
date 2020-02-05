@@ -177,7 +177,7 @@ void loadTextureFromFile(char const *filename, int index) {
 void loadTextures() {
 
 	loadTextureFromFile("piso.jpeg", 0);
-	loadTextureFromFile("wall.jpg", 1);
+	loadTextureFromFile("paredes.jpeg", 1);
 	loadTextureFromFile("janela.jpg", 2);
 	loadTextureFromFile("teto.jpg", 3);
 	loadTextureFromFile("porta.jpg", 4);
@@ -199,6 +199,7 @@ void loadTextures() {
 	loadTextureFromFile("frentecaixa.jpg", 20);
 	loadTextureFromFile("frentejogos.jpg", 21);
 	loadTextureFromFile("cimajogos.jpeg", 22);
-	loadTextureFromFile("macbook.jpeg", 23);
+    loadTextureFromFile("macbook.jpeg", 23);
+    loadTextureFromFile("piso 2.jpeg", 24);
 
 }
