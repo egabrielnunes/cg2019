@@ -214,5 +214,8 @@ void loadTextures() {
     loadTextureFromFile("images/interruptor.jpg", 35);
     loadTextureFromFile("images/ar.jpg", 36);
     loadTextureFromFile("images/ar2.jpg", 37);
+    loadTextureFromFile("images/cortina.jpeg", 38);
+    loadTextureFromFile("images/cortina2.jpeg", 39);
+    loadTextureFromFile("images/cortina 3.png", 40);
 
 }

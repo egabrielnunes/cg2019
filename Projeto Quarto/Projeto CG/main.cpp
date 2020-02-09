@@ -14,38 +14,104 @@ void init(void) {
     // sky color
     glClearColor(0.0, 0.7, 1.0, 1.0);
 
-    GLfloat luzAmbiente[4]={0.9,0.9,0.9,1.0};
-    GLfloat luzDifusa[4]={1.5,1.5,1.5,1.0};	   // "cor"
-    GLfloat luzEspecular[4]={3.0, 5.0, 2.0, 1.0};// "brilho"
-    GLfloat posicaoLuz[4]={-3, 0.5, -6, 1.0};
-
-    // Capacidade de brilho do material
-    GLfloat especularidade[4]={0.5,0.5,0.5,1.0};
-    GLint especMaterial = 60;
-
-    // Habilita o modelo de colorização de Gouraud
-    glShadeModel(GL_SMOOTH);
-
-    // Define a refletância do material
-    glMaterialfv(GL_FRONT,GL_SPECULAR, especularidade);
-    // Define a concentração do brilho
-    glMateriali(GL_FRONT,GL_SHININESS,especMaterial);
-
-    // Ativa o uso da luz ambiente
-    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, luzAmbiente);
-
-    // Define os parâmetros da luz de número 0
-    glLightfv(GL_LIGHT0, GL_AMBIENT, luzAmbiente);
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, luzDifusa );
-    glLightfv(GL_LIGHT0, GL_SPECULAR, luzEspecular );
-    glLightfv(GL_LIGHT0, GL_POSITION, posicaoLuz);
-
-    // Habilita a definição da cor do material a partir da cor corrente
-    glEnable(GL_COLOR_MATERIAL);
-    //Habilita o uso de iluminação
-    glEnable(GL_LIGHTING);
-    // Habilita a luz de número 0
+//    GLfloat luzAmbiente[4]={0.2,0.2,0.2,1.0};
+//    GLfloat luzDifusa[4]={0.8,0.8,0.8,1.0};	   // "cor"
+//    GLfloat luzEspecular[4]={1.0, 1.0, 1.0, 1.0};// "brilho"
+//
+//    // Capacidade de brilho do material
+//    GLfloat especularidade[4]={0.5,0.5,0.5,1.0};
+//    GLint especMaterial = 60;
+//
+//    // Habilita o modelo de colorização de Gouraud
+//    glShadeModel(GL_SMOOTH);
+//
+//    // Define a refletância do material
+//    glMaterialfv(GL_FRONT,GL_SPECULAR, especularidade);
+//    // Define a concentração do brilho
+//    glMateriali(GL_FRONT,GL_SHININESS,especMaterial);
+//
+//    // Ativa o uso da luz ambiente
+////    glLightModelfv(GL_LIGHT_MODEL_AMBIENT, luzAmbiente);
+//
+//    // Define os parâmetros da luz de número 0
+//    glLightfv(GL_LIGHT0, GL_AMBIENT, luzAmbiente);
+//    glLightfv(GL_LIGHT0, GL_DIFFUSE, luzDifusa );
+//    glLightfv(GL_LIGHT0, GL_SPECULAR, luzEspecular );
+//
+//    // Habilita a definição da cor do material a partir da cor corrente
+//    glEnable(GL_COLOR_MATERIAL);
+//    //Habilita o uso de iluminação
+//    glEnable(GL_LIGHTING);
+//    // Habilita a luz de número 0
 //    glEnable(GL_LIGHT0);
+//
+//    GLfloat posicaoLuz[4]={0.5, 0.5, 0, 1.0};
+//    glLightfv(GL_LIGHT0, GL_POSITION, posicaoLuz);
+
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(-1.0, 1.0, -1.0, 1.0, -1.0, 1.0);
+
+    // Lighting set up
+    glLightModeli(GL_LIGHT_MODEL_LOCAL_VIEWER, GL_TRUE);
+    glEnable(GL_LIGHTING);
+//    glEnable(GL_LIGHT0);
+//    glEnable(GL_LIGHT1);
+//    glEnable(GL_LIGHT2);
+//    glEnable(GL_LIGHT3);
+//    glEnable(GL_LIGHT4);
+
+    // Set lighting intensity and color
+    GLfloat qaAmbientLight[]	= {0.2, 0.2, 0.2, 1.0};
+    GLfloat qaDiffuseLight[]	= {0.8, 0.8, 0.8, 1.0};
+    GLfloat qaSpecularLight[]	= {1.0, 1.0, 1.0, 1.0};
+
+    glLightfv(GL_LIGHT0, GL_AMBIENT, qaAmbientLight);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, qaDiffuseLight);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, qaSpecularLight);
+
+    glLightfv(GL_LIGHT1, GL_AMBIENT, qaAmbientLight);
+    glLightfv(GL_LIGHT1, GL_DIFFUSE, qaDiffuseLight);
+    glLightfv(GL_LIGHT1, GL_SPECULAR, qaSpecularLight);
+
+    glLightfv(GL_LIGHT2, GL_AMBIENT, qaAmbientLight);
+    glLightfv(GL_LIGHT2, GL_DIFFUSE, qaDiffuseLight);
+    glLightfv(GL_LIGHT2, GL_SPECULAR, qaSpecularLight);
+
+    glLightfv(GL_LIGHT3, GL_AMBIENT, qaAmbientLight);
+    glLightfv(GL_LIGHT3, GL_DIFFUSE, qaDiffuseLight);
+    glLightfv(GL_LIGHT3, GL_SPECULAR, qaSpecularLight);
+
+    glLightfv(GL_LIGHT4, GL_AMBIENT, qaAmbientLight);
+    glLightfv(GL_LIGHT4, GL_DIFFUSE, qaDiffuseLight);
+    glLightfv(GL_LIGHT4, GL_SPECULAR, qaSpecularLight);
+
+
+    //Luz da janela
+    GLfloat qaLightPosition[]	= {-1.9f, 1.0, -5.9f, 1.0};
+    glLightfv(GL_LIGHT0, GL_POSITION, qaLightPosition);
+
+    GLfloat qaLightPosition1[]	= {-5.0f, 1.0, -5.9f, 1.0};
+    glLightfv(GL_LIGHT1, GL_POSITION, qaLightPosition1);
+
+    GLfloat qaLightPosition2[]	= {1.9f, 1.0, -5.9f, 1.0};
+    glLightfv(GL_LIGHT2, GL_POSITION, qaLightPosition2);
+
+//    glLightf(GL_LIGHT3, GL_SPOT_CUTOFF, 360.0);
+//    GLfloat spot_direction3[] = {-5.0f, 1.0, 2.0};
+//    glLightfv(GL_LIGHT3, GL_SPOT_DIRECTION, spot_direction3);
+//
+//    glLightf(GL_LIGHT4, GL_SPOT_CUTOFF, 360.0);
+//    GLfloat spot_direction4[] = {5.0f, -4.0, 2.0};
+//    glLightfv(GL_LIGHT4, GL_SPOT_DIRECTION, spot_direction4);
+
+    GLfloat qaLightPosition3[]	= {-5.0f, 1.0f, 2.0f, 1.0};
+    glLightfv(GL_LIGHT3, GL_POSITION, qaLightPosition3);
+
+    GLfloat qaLightPosition4[]	= {5.0f, -4.0f, 2.0f, 1.0};
+    glLightfv(GL_LIGHT4, GL_POSITION, qaLightPosition4);
+
+
     // Habilita o depth-buffering
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_TEXTURE_2D);
@@ -305,7 +371,6 @@ void drawTv(){
     glVertex3f(-1.9f,-0.6f,-2.5f);
     glEnd();
 
-    glClearColor(0.0f,0.0f,0.0f,0.0f);
 }
 
 //Quadro RHCP 1
@@ -527,20 +592,69 @@ void drawFront(){
 void window(){
 
     //janela
-    glColor3f(1.0f, 1.0f, 1.0f);
-    glPushMatrix();
-
     glBindTexture(GL_TEXTURE_2D, texture_id[9]);
-    glBegin(GL_QUADS);  // Wall
+    glBegin(GL_QUADS);
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-1,-0.7,-5.9);
+    glVertex3f(-1.0f, -0.7f,-5.95f);
+
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(1,-0.7,-5.9);
+    glVertex3f(1.0f, -0.7f,-5.95f);
+
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(1,0.3,-5.9);
+    glVertex3f(1.0f, 0.3f,-5.95f);
+
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(-1,0.3,-5.9);
+    glVertex3f(-1.0f, 0.3f,-5.95f);
     glEnd();
+
+    //cortina esquerda
+    glBindTexture(GL_TEXTURE_2D, texture_id[40]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.9f, -1.1f,-5.9f);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-0.7f, -1.1f,-5.9f);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(-0.7f, 0.4f,-5.9f);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.9f, 0.4f,-5.9f);
+    glEnd();
+
+    //cortina direita
+    glBindTexture(GL_TEXTURE_2D, texture_id[40]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.9f, -1.1f,-5.9f);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(0.7f, -1.1f,-5.9f);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(0.7f, 0.4f,-5.9f);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(1.9f, 0.4f,-5.9f);
+    glEnd();
+
+    //cortina centro
+    glBindTexture(GL_TEXTURE_2D, texture_id[39]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-1.0f, 0.36f,-5.91f);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.0f, 0.36f,-5.91f);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.0f, 0.38f,-5.91f);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(-1.0f, 0.38f,-5.91f);
+    glEnd();
+
 }
 
 //Guarda Roupa
@@ -610,6 +724,19 @@ void drawFloor(){
     glVertex3f( 2.0f, 0.5f, 1.0f);
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f( 2.0f, 0.5f, -6.0f);
+    glEnd();
+
+    //teto
+    glBindTexture(GL_TEXTURE_2D, texture_id[2]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(-0.1f, 0.49f, -4.0f);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(-0.1f, 0.49f, -1.0f);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(0.1f, 0.49f, -1.0f);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(0.1f, 0.49f, -4.0f);
     glEnd();
 }
 
@@ -1509,13 +1636,13 @@ void drawCriado() {
     glBindTexture(GL_TEXTURE_2D, texture_id[11]);
     glBegin(GL_QUADS);
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(1.5f, -0.6, -6.0f);
+    glVertex3f(1.5f, -0.6, -5.9f);
     glTexCoord2f(1.0f, 1.0f);
     glVertex3f(1.5f, -0.6, -5.1f);
     glTexCoord2f(1.0f, 0.0f);
     glVertex3f(2.0f, -0.6, -5.1f);
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(2.0f, -0.6, -6.0f);
+    glVertex3f(2.0f, -0.6, -5.9f);
     glEnd();
 
     //lateral da frente
@@ -1540,7 +1667,7 @@ void drawCriado() {
     glBindTexture(GL_TEXTURE_2D, texture_id[14]);
     glBegin(GL_QUADS);  // Wall
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(1.5,-0.6,-6);
+    glVertex3f(1.5,-0.6,-5.9f);
 
     glTexCoord2f(1.0f, 1.0f);
     glVertex3f(1.5,-0.6,-5.1);
@@ -1549,11 +1676,10 @@ void drawCriado() {
     glVertex3f(1.5,-1.5,-5.1);
 
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(1.5,-1.5,-6);
+    glVertex3f(1.5,-1.5,-5.9f);
     glEnd();
 
 }
-
 
 //Criado Mudo 2
 void drawCriado2() {
@@ -1564,9 +1690,9 @@ void drawCriado2() {
     glTexCoord2f(0.0f, 1.0f);
     glVertex3f(1.5f, -0.6, -1.9f);
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(1.5f, -0.6, -1.0f);
+    glVertex3f(1.5f, -0.6, -1.1f);
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(2.0f, -0.6, -1.0f);
+    glVertex3f(2.0f, -0.6, -1.1f);
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(2.0f, -0.6, -1.9f);
     glEnd();
@@ -1575,16 +1701,16 @@ void drawCriado2() {
     glBindTexture(GL_TEXTURE_2D, texture_id[11]);
     glBegin(GL_QUADS);  // Wall
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(2,-0.6,-1.0f);
+    glVertex3f(2,-0.6,-1.1f);
 
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(1.5,-0.6,-1.0f);
+    glVertex3f(1.5,-0.6,-1.1f);
 
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(1.5,-1.5,-1.0f);
+    glVertex3f(1.5,-1.5,-1.1f);
 
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(2,-1.5,-1.0f);
+    glVertex3f(2,-1.5,-1.1f);
     glEnd();
 
     //lateral da tras
@@ -1610,10 +1736,10 @@ void drawCriado2() {
     glVertex3f(1.5,-0.6,-1.9f);
 
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(1.5,-0.6,-1.0f);
+    glVertex3f(1.5,-0.6,-1.1f);
 
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(1.5,-1.5,-1.0f);
+    glVertex3f(1.5,-1.5,-1.1f);
 
     glTexCoord2f(0.0f, 0.0f);
     glVertex3f(1.5,-1.5,-1.9f);
@@ -1863,6 +1989,40 @@ void processNormalKeys(unsigned char key, int x, int y) {
             glutPostRedisplay();
             break;
 
+        case '0':
+            if(glIsEnabled(GL_LIGHT0))
+                glDisable(GL_LIGHT0);
+            else
+                glEnable(GL_LIGHT0);
+            break;
+
+        case '1':
+            if(glIsEnabled(GL_LIGHT1))
+                glDisable(GL_LIGHT1);
+            else
+                glEnable(GL_LIGHT1);
+            break;
+
+        case '2':
+            if(glIsEnabled(GL_LIGHT2))
+                glDisable(GL_LIGHT2);
+            else
+                glEnable(GL_LIGHT2);
+            break;
+
+        case '3':
+            if(glIsEnabled(GL_LIGHT3))
+                glDisable(GL_LIGHT3);
+            else
+                glEnable(GL_LIGHT3);
+            break;
+
+        case '4':
+            if(glIsEnabled(GL_LIGHT4))
+                glDisable(GL_LIGHT4);
+            else
+                glEnable(GL_LIGHT4);
+            break;
         case 27:
             exit(0);
             break;
