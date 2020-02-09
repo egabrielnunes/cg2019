@@ -201,7 +201,7 @@ void loadTextures() {
 	loadTextureFromFile("images/cimajogos.jpeg", 22);
     loadTextureFromFile("images/macbook.jpeg", 23);
     loadTextureFromFile("images/piso 2.jpeg", 24);
-    loadTextureFromFile("images/basquete.png", 25);
+    loadTextureFromFile("images/basqueteq.jpg", 25);
     loadTextureFromFile("images/psfrente.jpeg", 26);
     loadTextureFromFile("images/ps4cima.jpeg", 27);
     loadTextureFromFile("images/pslateral.jpeg", 28);

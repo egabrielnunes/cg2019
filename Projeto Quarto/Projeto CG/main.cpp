@@ -575,9 +575,9 @@ void drawFront(){
     glBindTexture(GL_TEXTURE_2D, texture_id[1]);
     glBegin(GL_QUADS);  // Wall FRONT MIDDLE botton
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(0.8, -1.25, 1);
+    glVertex3f(0.8, -1.2, 1);
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(-1.3, -1.25, 1);
+    glVertex3f(-1.3, -1.2, 1);
     glTexCoord2f(1.0f, 0.0f);
     glVertex3f(-1.3, -1.5, 1);
     glTexCoord2f(0.0f, 0.0f);
@@ -1847,41 +1847,50 @@ void drawBed() {
 }
 
 void drawBall(){
-    int i, j;
-    int lats = 500;
-    int longs =  500;
-    float r =  0.2f;
 
-    for(i = 0; i <= lats; i++) {
-        double lat0 = M_PI * (-0.5 + (double) (i - 1) / lats);
-        double z0  = sin(lat0);
-        double zr0 =  cos(lat0);
-
-        double lat1 = M_PI * (-0.5 + (double) i / lats);
-        double z1 = sin(lat1);
-        double zr1 = cos(lat1);
-
-        glBindTexture(GL_TEXTURE_2D, texture_id[25]);
-        glColor3f(1.0f, 0.5f, 0.0f);
-        glBegin(GL_QUAD_STRIP);
-        for(j = 0; j <= longs; j++) {
-            double lng = 2 * M_PI * (double) (j - 1) / longs;
-            double x = cos(lng);
-            double y = sin(lng);
-            glTexCoord2f(0.0f, 1.0f);
-            glNormal3f(x * zr0-1.7, y * zr0+1, z0-5);
-
-            glTexCoord2f(1.0f, 1.0f);
-            glVertex3f(r * x * zr0-1.7, r * y * zr0+1, r * z0-5);
-
-            glTexCoord2f(1.0f, 0.0f);
-            glNormal3f(x * zr1-1.7, y * zr1, z1-3);
-
-            glTexCoord2f(0.0f, 0.0f);
-            glVertex3f(r * x * zr1-1.7, r * y * zr1+1, r * z1-5);
-        }
-        glEnd();
-    }
+//    glTranslatef(-1.8, 0.65f, 1);
+//    glScalef(0.6, 1.1, 0.1f);
+    glEnable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+    glEnable(GL_TEXTURE_GEN_T);
+    glBindTexture(GL_TEXTURE_2D, texture_id[25]);
+    glutSolidSphere(1.0,100,100);
+    glDisable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+    glDisable(GL_TEXTURE_GEN_T);
+//    int i, j;
+//    int lats = 500;
+//    int longs =  500;
+//    float r =  0.2f;
+//
+//    for(i = 0; i <= lats; i++) {
+//        double lat0 = M_PI * (-0.5 + (double) (i - 1) / lats);
+//        double z0  = sin(lat0);
+//        double zr0 =  cos(lat0);
+//
+//        double lat1 = M_PI * (-0.5 + (double) i / lats);
+//        double z1 = sin(lat1);
+//        double zr1 = cos(lat1);
+//
+//        glBindTexture(GL_TEXTURE_2D, texture_id[25]);
+//        glColor3f(1.0f, 0.5f, 0.0f);
+//        glBegin(GL_QUAD_STRIP);
+//        for(j = 0; j <= longs; j++) {
+//            double lng = 2 * M_PI * (double) (j - 1) / longs;
+//            double x = cos(lng);
+//            double y = sin(lng);
+//            glTexCoord2f(0.0f, 1.0f);
+//            glNormal3f(x * zr0-1.7, y * zr0+1, z0-5);
+//
+//            glTexCoord2f(1.0f, 1.0f);
+//            glVertex3f(r * x * zr0-1.7, r * y * zr0+1, r * z0-5);
+//
+//            glTexCoord2f(1.0f, 0.0f);
+//            glNormal3f(x * zr1-1.7, y * zr1, z1-3);
+//
+//            glTexCoord2f(0.0f, 0.0f);
+//            glVertex3f(r * x * zr1-1.7, r * y * zr1+1, r * z1-5);
+//        }
+//        glEnd();
+//    }
 
 }
 
@@ -1931,8 +1940,15 @@ void drawDoor() {
     glTranslatef(0.8, 0, 0);
     glColor3f(0.5f, 0.5f, 0.5f);
     glScalef(0.6, 1.1, 0.1f);
+    glEnable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+    glEnable(GL_TEXTURE_GEN_T);
+    glBindTexture(GL_TEXTURE_2D, texture_id[4]);
     glutSolidCube(1.0);
+    glDisable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+    glDisable(GL_TEXTURE_GEN_T);
     glPopMatrix();
+
+
 }
 
 void changeSize(int w, int h){
@@ -1967,8 +1983,8 @@ void renderScene(void){
     // Set the camera
     gluLookAt(x, 1.0f, z, x+lx, 1.0f, z+lz, 0.0f, 1.0f, 0.0f);
 
-    drawDoor();
     drawGround();
+    drawDoor();
     drawBedroom();
 //    drawBall();
 

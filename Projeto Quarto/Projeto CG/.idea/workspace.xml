@@ -12,13 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cortina 3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cortina.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/cortina2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/porta.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/texture.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/porta.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/porta.jpg" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -34,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-851">
-              <caret line="700" column="16" selection-start-line="700" selection-start-column="16" selection-end-line="700" selection-end-column="16" />
+            <state relative-caret-position="422">
+              <caret line="1857" column="22" selection-start-line="1857" selection-start-column="22" selection-end-line="1857" selection-end-column="22" />
               <folding>
                 <element signature="e#223#1597#0" />
                 <element signature="e#1599#2595#0" />
@@ -65,13 +62,8 @@
                 <element signature="e#34897#36046#0" />
                 <element signature="e#26393#26449#0" />
                 <element signature="e#26327#27824#0" />
-                <element signature="e#28654#28821#0" />
                 <element signature="e#27826#28321#0" />
-                <element signature="e#28323#28584#0" />
                 <element signature="e#28586#28837#0" />
-                <element signature="e#28839#29102#0" />
-                <element signature="e#29104#29388#0" />
-                <element signature="e#29390#29783#0" />
                 <element signature="e#29785#30384#0" />
                 <element signature="e#30386#30890#0" />
               </folding>
@@ -80,19 +72,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/OpenGLLesson4/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="397">
-              <caret line="60" column="55" selection-start-line="40" selection-start-column="4" selection-end-line="60" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texture.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="218" column="45" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="45" />
+            <state relative-caret-position="48">
+              <caret line="180" column="48" lean-forward="true" selection-start-line="180" selection-start-column="48" selection-end-line="180" selection-end-column="48" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#164#1911#0" />
@@ -105,10 +88,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>glColor3f</find>
-      <find>sky</find>
-      <find>windows</find>
-      <find>texture_id[0]</find>
       <find>texture_id</find>
       <find>tower</find>
       <find>front</find>
@@ -122,9 +101,7 @@
       <find>altar</find>
       <find>win</find>
       <find>window</find>
-      <find>teto</find>
       <find>DOOR</find>
-      <find>door</find>
       <find>sides</find>
       <find>drawba</find>
       <find>angle</find>
@@ -135,6 +112,12 @@
       <find>janela</find>
       <find>cortin</find>
       <find>tv</find>
+      <find>teto</find>
+      <find>door</find>
+      <find>porta</find>
+      <find>madeir</find>
+      <find>draw</find>
+      <find>drawBall</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -242,12 +225,12 @@
       <workItem from="1575318759050" duration="712000" />
       <workItem from="1580073491087" duration="19999000" />
       <workItem from="1580911041594" duration="5628000" />
-      <workItem from="1581019195171" duration="20625000" />
+      <workItem from="1581019195171" duration="21680000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121578000" />
+    <option name="totallyTimeSpent" value="122633000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -371,13 +354,6 @@
     <entry file="file://$PROJECT_DIR$/images/ground.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="504" column="21" selection-start-line="504" selection-start-column="21" selection-end-line="504" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ps4frente.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -391,17 +367,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/texture.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="457">
-          <caret line="218" column="45" selection-start-line="218" selection-start-column="45" selection-end-line="218" selection-end-column="45" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#164#1911#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/OpenGLLesson4/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -409,10 +374,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="443" column="21" selection-start-line="443" selection-start-column="21" selection-end-line="443" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texture.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="180" column="48" lean-forward="true" selection-start-line="180" selection-start-column="48" selection-end-line="180" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#164#1911#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-851">
-          <caret line="700" column="16" selection-start-line="700" selection-start-column="16" selection-end-line="700" selection-end-column="16" />
+        <state relative-caret-position="422">
+          <caret line="1857" column="22" selection-start-line="1857" selection-start-column="22" selection-end-line="1857" selection-end-column="22" />
           <folding>
             <element signature="e#223#1597#0" />
             <element signature="e#1599#2595#0" />
@@ -442,13 +425,8 @@
             <element signature="e#34897#36046#0" />
             <element signature="e#26393#26449#0" />
             <element signature="e#26327#27824#0" />
-            <element signature="e#28654#28821#0" />
             <element signature="e#27826#28321#0" />
-            <element signature="e#28323#28584#0" />
             <element signature="e#28586#28837#0" />
-            <element signature="e#28839#29102#0" />
-            <element signature="e#29104#29388#0" />
-            <element signature="e#29390#29783#0" />
             <element signature="e#29785#30384#0" />
             <element signature="e#30386#30890#0" />
           </folding>
