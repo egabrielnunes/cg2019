@@ -11,7 +11,24 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="" />
+    <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/ar.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ar2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/basquete.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/basquete.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/got.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/got1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/got2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/interruptor.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/macbook.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/ps4cima.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/psfrente.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/pslateral.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tomada1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/tomada3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -26,8 +43,44 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+            <state relative-caret-position="386">
+              <caret line="1059" column="22" selection-start-line="1059" selection-start-column="22" selection-end-line="1059" selection-end-column="22" />
+              <folding>
+                <element signature="e#223#1597#0" />
+                <element signature="e#1599#2595#0" />
+                <element signature="e#2597#4443#0" />
+                <element signature="e#4439#4763#0" />
+                <element signature="e#4766#7169#1" />
+                <element signature="e#6775#7209#0" />
+                <element signature="e#7211#7650#0" />
+                <element signature="e#7652#8083#0" />
+                <element signature="e#8085#8511#0" />
+                <element signature="e#8513#11914#0" />
+                <element signature="e#11916#12349#0" />
+                <element signature="e#12351#13237#0" />
+                <element signature="e#13239#14011#0" />
+                <element signature="e#14013#15834#0" />
+                <element signature="e#15836#17667#0" />
+                <element signature="e#17669#19541#0" />
+                <element signature="e#19543#21414#0" />
+                <element signature="e#21416#23284#0" />
+                <element signature="e#23367#25235#0" />
+                <element signature="e#25254#27138#0" />
+                <element signature="e#25253#27173#0" />
+                <element signature="e#23367#25235#0" />
+                <element signature="e#23286#25174#0" />
+                <element signature="e#25176#26325#0" />
+                <element signature="e#26393#26449#0" />
+                <element signature="e#26327#27824#0" />
+                <element signature="e#28654#28821#0" />
+                <element signature="e#28323#28584#0" />
+                <element signature="e#28586#28837#0" />
+                <element signature="e#28839#29102#0" />
+                <element signature="e#29104#29388#0" />
+                <element signature="e#29390#29783#0" />
+                <element signature="e#29785#30384#0" />
+                <element signature="e#30386#30890#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,8 +88,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texture.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7">
-              <caret line="200" column="46" lean-forward="true" selection-start-line="200" selection-start-column="46" selection-end-line="200" selection-end-column="46" />
+            <state relative-caret-position="472">
+              <caret line="215" column="35" selection-start-line="215" selection-start-column="35" selection-end-line="215" selection-end-column="35" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#164#1911#0" />
@@ -49,10 +102,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>y1</find>
-      <find>x1</find>
-      <find>dg</find>
-      <find>-4</find>
       <find>windo</find>
       <find>cruz</find>
       <find>glColor3f</find>
@@ -75,8 +124,14 @@
       <find>teto</find>
       <find>DOOR</find>
       <find>door</find>
-      <find>tv</find>
       <find>sides</find>
+      <find>drawba</find>
+      <find>angle</find>
+      <find>glRotatef</find>
+      <find>tv</find>
+      <find>rodape</find>
+      <find>tomada</find>
+      <find>prate</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -94,7 +149,7 @@
     </option>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -114,6 +169,11 @@
               <item name="Projeto_CG" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projeto CG" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Projeto_CG" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Projeto CG" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -127,10 +187,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -177,18 +238,19 @@
       <workItem from="1554268174088" duration="12610000" />
       <workItem from="1575318759050" duration="712000" />
       <workItem from="1580073491087" duration="19999000" />
-      <workItem from="1580911041594" duration="5447000" />
+      <workItem from="1580911041594" duration="5628000" />
+      <workItem from="1581019195171" duration="12271000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100772000" />
+    <option name="totallyTimeSpent" value="113224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15450644" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15665236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -211,7 +273,7 @@
       <window_info anchor="right" id="Database" order="3" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1502146" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15665236" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -249,13 +311,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="117" column="8" selection-start-line="117" selection-start-column="8" selection-end-line="117" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cmake_install.cmake">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -266,13 +321,6 @@
     <entry file="file://$PROJECT_DIR$/SFML/Audio/Music.hpp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="178">
-          <caret line="437" selection-start-line="437" selection-end-line="437" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qtlayoutexample.cbp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -280,7 +328,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/altar.jpg">
+    <entry file="file://$PROJECT_DIR$/images/altar.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeCache.txt">
@@ -304,26 +352,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wall.jpg">
+    <entry file="file://$PROJECT_DIR$/images/wall.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/porta.jpg">
+    <entry file="file://$PROJECT_DIR$/images/porta.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ground.jpeg">
+    <entry file="file://$PROJECT_DIR$/images/ground.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$USER_HOME$/Desktop/janela.jpg" />
-    <entry file="file://$PROJECT_DIR$/tv.jpg">
+    <entry file="file://$PROJECT_DIR$/images/tv.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ground.jpg">
+    <entry file="file://$PROJECT_DIR$/images/ground.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="2739" column="12" selection-start-line="2739" selection-start-column="12" selection-end-line="2739" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/GLUT.framework/Headers/glut.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="504" column="21" selection-start-line="504" selection-start-column="21" selection-end-line="504" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ps4frente.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/ps4cima.jpeg">
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/texture.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="200" column="46" lean-forward="true" selection-start-line="200" selection-start-column="46" selection-end-line="200" selection-end-column="46" />
+        <state relative-caret-position="472">
+          <caret line="215" column="35" selection-start-line="215" selection-start-column="35" selection-end-line="215" selection-end-column="35" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <element signature="e#164#1911#0" />
@@ -333,8 +401,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+        <state relative-caret-position="386">
+          <caret line="1059" column="22" selection-start-line="1059" selection-start-column="22" selection-end-line="1059" selection-end-column="22" />
+          <folding>
+            <element signature="e#223#1597#0" />
+            <element signature="e#1599#2595#0" />
+            <element signature="e#2597#4443#0" />
+            <element signature="e#4439#4763#0" />
+            <element signature="e#4766#7169#1" />
+            <element signature="e#6775#7209#0" />
+            <element signature="e#7211#7650#0" />
+            <element signature="e#7652#8083#0" />
+            <element signature="e#8085#8511#0" />
+            <element signature="e#8513#11914#0" />
+            <element signature="e#11916#12349#0" />
+            <element signature="e#12351#13237#0" />
+            <element signature="e#13239#14011#0" />
+            <element signature="e#14013#15834#0" />
+            <element signature="e#15836#17667#0" />
+            <element signature="e#17669#19541#0" />
+            <element signature="e#19543#21414#0" />
+            <element signature="e#21416#23284#0" />
+            <element signature="e#23367#25235#0" />
+            <element signature="e#25254#27138#0" />
+            <element signature="e#25253#27173#0" />
+            <element signature="e#23367#25235#0" />
+            <element signature="e#23286#25174#0" />
+            <element signature="e#25176#26325#0" />
+            <element signature="e#26393#26449#0" />
+            <element signature="e#26327#27824#0" />
+            <element signature="e#28654#28821#0" />
+            <element signature="e#28323#28584#0" />
+            <element signature="e#28586#28837#0" />
+            <element signature="e#28839#29102#0" />
+            <element signature="e#29104#29388#0" />
+            <element signature="e#29390#29783#0" />
+            <element signature="e#29785#30384#0" />
+            <element signature="e#30386#30890#0" />
+          </folding>
         </state>
       </provider>
     </entry>

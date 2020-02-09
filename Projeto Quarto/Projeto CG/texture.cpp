@@ -8,7 +8,7 @@
 #define FRONT 4
 #define BACK 5
 
-GLuint texture_id[25];
+GLuint texture_id[50];
 
 void drawCube(GLdouble size, int *tex) {
 
@@ -176,30 +176,43 @@ void loadTextureFromFile(char const *filename, int index) {
 
 void loadTextures() {
 
-	loadTextureFromFile("piso.jpeg", 0);
-	loadTextureFromFile("paredes.jpeg", 1);
-	loadTextureFromFile("janela.jpg", 2);
-	loadTextureFromFile("teto.jpg", 3);
-	loadTextureFromFile("porta.jpg", 4);
-	loadTextureFromFile("parede1.jpg", 5);
-	loadTextureFromFile("teto.png", 6);
-	loadTextureFromFile("tv.jpg", 7);
-	loadTextureFromFile("teto.jpeg", 8);
-	loadTextureFromFile("janela1.jpeg", 9);
-	loadTextureFromFile("roupa2.jpg", 10);
-	loadTextureFromFile("madeira.jpeg", 11);
-	loadTextureFromFile("cama.jpeg", 12);
-	loadTextureFromFile("rhcp.jpeg", 13);
-	loadTextureFromFile("criado.jpeg", 14);
-	loadTextureFromFile("branco.jpg", 15);
-	loadTextureFromFile("hp1.jpeg", 16);
-	loadTextureFromFile("hp2.jpeg", 17);
-	loadTextureFromFile("rhcp2.jpeg", 18);
-	loadTextureFromFile("madeiraclara.jpg", 19);
-	loadTextureFromFile("frentecaixa.jpg", 20);
-	loadTextureFromFile("frentejogos.jpg", 21);
-	loadTextureFromFile("cimajogos.jpeg", 22);
-    loadTextureFromFile("macbook.jpeg", 23);
-    loadTextureFromFile("piso 2.jpeg", 24);
+	loadTextureFromFile("images/piso.jpeg", 0);
+	loadTextureFromFile("images/paredes.jpeg", 1);
+	loadTextureFromFile("images/janela.jpg", 2);
+	loadTextureFromFile("images/teto.jpg", 3);
+	loadTextureFromFile("images/porta.jpg", 4);
+	loadTextureFromFile("images/parede1.jpg", 5);
+	loadTextureFromFile("images/teto.png", 6);
+	loadTextureFromFile("images/tv.jpg", 7);
+	loadTextureFromFile("images/teto.jpeg", 8);
+	loadTextureFromFile("images/janela1.jpeg", 9);
+	loadTextureFromFile("images/roupa2.jpg", 10);
+	loadTextureFromFile("images/madeira.jpeg", 11);
+	loadTextureFromFile("images/cama.jpeg", 12);
+	loadTextureFromFile("images/rhcp.jpeg", 13);
+	loadTextureFromFile("images/criado.jpeg", 14);
+	loadTextureFromFile("images/branco.jpg", 15);
+	loadTextureFromFile("images/hp1.jpeg", 16);
+	loadTextureFromFile("images/hp2.jpeg", 17);
+	loadTextureFromFile("images/rhcp2.jpeg", 18);
+	loadTextureFromFile("images/madeiraclara.jpg", 19);
+	loadTextureFromFile("images/frentecaixa.jpg", 20);
+	loadTextureFromFile("images/frentejogos.jpg", 21);
+	loadTextureFromFile("images/cimajogos.jpeg", 22);
+    loadTextureFromFile("images/macbook.jpeg", 23);
+    loadTextureFromFile("images/piso 2.jpeg", 24);
+    loadTextureFromFile("images/basquete.png", 25);
+    loadTextureFromFile("images/psfrente.jpeg", 26);
+    loadTextureFromFile("images/ps4cima.jpeg", 27);
+    loadTextureFromFile("images/pslateral.jpeg", 28);
+    loadTextureFromFile("images/macbook.jpg", 29);
+	loadTextureFromFile("images/got.jpg", 30);
+	loadTextureFromFile("images/got1.jpg", 31);
+	loadTextureFromFile("images/got2.jpg", 32);
+	loadTextureFromFile("images/tomada3.jpg", 33);
+	loadTextureFromFile("images/tomada1.jpg", 34);
+    loadTextureFromFile("images/interruptor.jpg", 35);
+    loadTextureFromFile("images/ar.jpg", 36);
+    loadTextureFromFile("images/ar2.jpg", 37);
 
 }
