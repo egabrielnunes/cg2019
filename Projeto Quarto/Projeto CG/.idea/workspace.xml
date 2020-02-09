@@ -12,22 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/ar.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ar2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/basquete.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/basquete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/got.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/got1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/got2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/interruptor.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/macbook.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/ps4cima.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/psfrente.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/pslateral.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tomada1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/tomada3.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_CG" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto_CG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -43,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="386">
-              <caret line="1059" column="22" selection-start-line="1059" selection-start-column="22" selection-end-line="1059" selection-end-column="22" />
+            <state relative-caret-position="139">
+              <caret line="1615" column="26" selection-start-line="1615" selection-start-column="26" selection-end-line="1615" selection-end-column="26" />
               <folding>
                 <element signature="e#223#1597#0" />
                 <element signature="e#1599#2595#0" />
@@ -63,6 +51,7 @@
                 <element signature="e#15836#17667#0" />
                 <element signature="e#17669#19541#0" />
                 <element signature="e#19543#21414#0" />
+                <element signature="e#22637#24468#0" />
                 <element signature="e#21416#23284#0" />
                 <element signature="e#23367#25235#0" />
                 <element signature="e#25254#27138#0" />
@@ -239,12 +228,12 @@
       <workItem from="1575318759050" duration="712000" />
       <workItem from="1580073491087" duration="19999000" />
       <workItem from="1580911041594" duration="5628000" />
-      <workItem from="1581019195171" duration="12271000" />
+      <workItem from="1581019195171" duration="12795000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113224000" />
+    <option name="totallyTimeSpent" value="113748000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -401,8 +390,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="1059" column="22" selection-start-line="1059" selection-start-column="22" selection-end-line="1059" selection-end-column="22" />
+        <state relative-caret-position="139">
+          <caret line="1615" column="26" selection-start-line="1615" selection-start-column="26" selection-end-line="1615" selection-end-column="26" />
           <folding>
             <element signature="e#223#1597#0" />
             <element signature="e#1599#2595#0" />
@@ -421,6 +410,7 @@
             <element signature="e#15836#17667#0" />
             <element signature="e#17669#19541#0" />
             <element signature="e#19543#21414#0" />
+            <element signature="e#22637#24468#0" />
             <element signature="e#21416#23284#0" />
             <element signature="e#23367#25235#0" />
             <element signature="e#25254#27138#0" />

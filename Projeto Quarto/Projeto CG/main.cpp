@@ -1554,6 +1554,73 @@ void drawCriado() {
 
 }
 
+
+//Criado Mudo 2
+void drawCriado2() {
+
+    //cama
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.5f, -0.6, -1.9f);
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.5f, -0.6, -1.0f);
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(2.0f, -0.6, -1.0f);
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2.0f, -0.6, -1.9f);
+    glEnd();
+
+    //lateral da frente
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(2,-0.6,-1.0f);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.5,-0.6,-1.0f);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.5,-1.5,-1.0f);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2,-1.5,-1.0f);
+    glEnd();
+
+    //lateral da tras
+    glBindTexture(GL_TEXTURE_2D, texture_id[11]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(2,-0.6,-1.9f);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.5,-0.6,-1.9f);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.5,-1.5,-1.9f);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(2,-1.5,-1.9f);
+    glEnd();
+
+    //frente
+    glBindTexture(GL_TEXTURE_2D, texture_id[14]);
+    glBegin(GL_QUADS);  // Wall
+    glTexCoord2f(0.0f, 1.0f);
+    glVertex3f(1.5,-0.6,-1.9f);
+
+    glTexCoord2f(1.0f, 1.0f);
+    glVertex3f(1.5,-0.6,-1.0f);
+
+    glTexCoord2f(1.0f, 0.0f);
+    glVertex3f(1.5,-1.5,-1.0f);
+
+    glTexCoord2f(0.0f, 0.0f);
+    glVertex3f(1.5,-1.5,-1.9f);
+    glEnd();
+
+}
+
 void drawTravesseiros(){
 
     //travesseiro 1
@@ -1707,6 +1774,7 @@ void drawBedroom(){
     drawbooks();
     drawtomadas();
 
+    drawCriado2();
     drawTravesseiros();
     drawJogos();
     drawCaixa();
