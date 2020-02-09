@@ -1848,50 +1848,42 @@ void drawBed() {
 
 void drawBall(){
 
-//    glTranslatef(-1.8, 0.65f, 1);
-//    glScalef(0.6, 1.1, 0.1f);
-    glEnable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
-    glEnable(GL_TEXTURE_GEN_T);
-    glBindTexture(GL_TEXTURE_2D, texture_id[25]);
-    glutSolidSphere(1.0,100,100);
-    glDisable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
-    glDisable(GL_TEXTURE_GEN_T);
-//    int i, j;
-//    int lats = 500;
-//    int longs =  500;
-//    float r =  0.2f;
-//
-//    for(i = 0; i <= lats; i++) {
-//        double lat0 = M_PI * (-0.5 + (double) (i - 1) / lats);
-//        double z0  = sin(lat0);
-//        double zr0 =  cos(lat0);
-//
-//        double lat1 = M_PI * (-0.5 + (double) i / lats);
-//        double z1 = sin(lat1);
-//        double zr1 = cos(lat1);
-//
+//    glPushMatrix();
+//        glTranslatef(-1.8f, 0.55, -4.8f);
+//        glScalef(0.15f, 0.15f, 0.15f);
+//        glEnable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+//        glEnable(GL_TEXTURE_GEN_T);
 //        glBindTexture(GL_TEXTURE_2D, texture_id[25]);
-//        glColor3f(1.0f, 0.5f, 0.0f);
-//        glBegin(GL_QUAD_STRIP);
-//        for(j = 0; j <= longs; j++) {
-//            double lng = 2 * M_PI * (double) (j - 1) / longs;
-//            double x = cos(lng);
-//            double y = sin(lng);
-//            glTexCoord2f(0.0f, 1.0f);
-//            glNormal3f(x * zr0-1.7, y * zr0+1, z0-5);
-//
-//            glTexCoord2f(1.0f, 1.0f);
-//            glVertex3f(r * x * zr0-1.7, r * y * zr0+1, r * z0-5);
-//
-//            glTexCoord2f(1.0f, 0.0f);
-//            glNormal3f(x * zr1-1.7, y * zr1, z1-3);
-//
-//            glTexCoord2f(0.0f, 0.0f);
-//            glVertex3f(r * x * zr1-1.7, r * y * zr1+1, r * z1-5);
-//        }
-//        glEnd();
-//    }
+//        glutSolidCube(1.0);
+//        glDisable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+//        glDisable(GL_TEXTURE_GEN_T);
+//    glPopMatrix();
 
+    glPushMatrix();
+        glTranslatef(-1.8f, 0.55, -5);
+        glScalef(-0.15f, -0.15f, -0.15f);
+        glEnable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+        glEnable(GL_TEXTURE_GEN_T);
+        glBindTexture(GL_TEXTURE_2D, texture_id[25]);
+        glutSolidSphere(1.0,100,100);
+        glDisable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+        glDisable(GL_TEXTURE_GEN_T);
+    glPopMatrix();
+
+    glPushMatrix();
+        glTranslatef(-1.8f, 0.25, -5.8f);
+        glScalef(0.15f, 0.15f, 0.15f);
+        glEnable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+        glEnable(GL_TEXTURE_GEN_T);
+        glBindTexture(GL_TEXTURE_2D, texture_id[41]);
+        glutSolidSphere(1.0,100,100);
+        glDisable(GL_TEXTURE_GEN_S); //enable texture coordinate generation
+        glDisable(GL_TEXTURE_GEN_T);
+    glPopMatrix();
+
+    glTranslatef(1.8f, 0.75, -5.8f);
+    glScalef(0.1f, 0.1f, 0.1f);
+    glutSolidTeapot(1.0);
 }
 
 //Desenha itens do quarto
@@ -1948,7 +1940,6 @@ void drawDoor() {
     glDisable(GL_TEXTURE_GEN_T);
     glPopMatrix();
 
-
 }
 
 void changeSize(int w, int h){
@@ -1986,7 +1977,7 @@ void renderScene(void){
     drawGround();
     drawDoor();
     drawBedroom();
-//    drawBall();
+    drawBall();
 
 
     glFlush();
