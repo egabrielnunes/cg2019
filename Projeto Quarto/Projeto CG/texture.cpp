@@ -225,5 +225,6 @@ void loadTextures() {
     loadTextureFromFile("images/cabeceira.jpg",46);
     loadTextureFromFile("images/bookcima.jpg",47);
     loadTextureFromFile("images/bookfrente.jpg",48);
+    loadTextureFromFile("images/vidro.jpg",49);
 
 }

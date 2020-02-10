@@ -677,13 +677,13 @@ void drawFloor(){
     glBindTexture(GL_TEXTURE_2D, texture_id[2]);
     glBegin(GL_QUADS);
     glTexCoord2f(0.0f, 1.0f);
-    glVertex3f(-0.1f, 0.49f, -4.0f);
+    glVertex3f(-0.1f, 0.49f, -3.0f);
     glTexCoord2f(1.0f, 1.0f);
-    glVertex3f(-0.1f, 0.49f, -1.0f);
+    glVertex3f(-0.1f, 0.49f, -1.5f);
     glTexCoord2f(1.0f, 0.0f);
-    glVertex3f(0.1f, 0.49f, -1.0f);
+    glVertex3f(0.1f, 0.49f, -1.5f);
     glTexCoord2f(0.0f, 0.0f);
-    glVertex3f(0.1f, 0.49f, -4.0f);
+    glVertex3f(0.1f, 0.49f, -3.0f);
     glEnd();
 }
 
@@ -1842,6 +1842,7 @@ void drawBed() {
 }
 
 void drawBall(){
+
     //bola de basquete
     glPushMatrix();
         glTranslatef(-1.8f, 0.55, -5);
@@ -1870,6 +1871,7 @@ void drawBall(){
     glTranslatef(1.8f, 0.75, -5.8f);
     glScalef(0.1f, 0.1f, 0.1f);
     glutSolidTeapot(1.0);
+
 }
 
 //Desenha itens do quarto

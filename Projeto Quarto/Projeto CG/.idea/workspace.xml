@@ -12,8 +12,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/images/vidro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/bookfrente.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/bookfrente.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/texture.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
@@ -29,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="35">
-              <caret line="490" column="29" lean-forward="true" selection-start-line="490" selection-start-column="29" selection-end-line="490" selection-end-column="29" />
+            <state relative-caret-position="260">
+              <caret line="1852" column="27" selection-start-line="1852" selection-start-column="27" selection-end-line="1852" selection-end-column="27" />
               <folding>
                 <element signature="e#223#1597#0" />
                 <element signature="e#1599#2595#0" />
@@ -41,6 +43,7 @@
                 <element signature="e#7211#7650#0" />
                 <element signature="e#7652#8083#0" />
                 <element signature="e#8085#8511#0" />
+                <element signature="e#8513#11914#0" />
                 <element signature="e#11916#12349#0" />
                 <element signature="e#12351#13237#0" />
                 <element signature="e#13239#14011#0" />
@@ -58,7 +61,6 @@
                 <element signature="e#25176#26325#0" />
                 <element signature="e#34897#36046#0" />
                 <element signature="e#26327#27824#0" />
-                <element signature="e#42448#43906#0" />
                 <element signature="e#27826#28321#0" />
                 <element signature="e#28323#28584#0" />
                 <element signature="e#28586#28837#0" />
@@ -75,8 +77,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/texture.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="219" column="50" selection-start-line="219" selection-start-column="50" selection-end-line="219" selection-end-column="50" />
+            <state relative-caret-position="473">
+              <caret line="227" column="47" lean-forward="true" selection-start-line="227" selection-start-column="47" selection-end-line="227" selection-end-column="47" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#164#1911#0" />
@@ -117,8 +119,8 @@
       <find>baq</find>
       <find>trave</find>
       <find>cama</find>
-      <find>bas</find>
       <find>travess</find>
+      <find>bas</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -226,12 +228,12 @@
       <workItem from="1575318759050" duration="712000" />
       <workItem from="1580073491087" duration="19999000" />
       <workItem from="1580911041594" duration="5628000" />
-      <workItem from="1581019195171" duration="29800000" />
+      <workItem from="1581019195171" duration="30702000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="130753000" />
+    <option name="totallyTimeSpent" value="131655000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -384,8 +386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/texture.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="219" column="50" selection-start-line="219" selection-start-column="50" selection-end-line="219" selection-end-column="50" />
+        <state relative-caret-position="473">
+          <caret line="227" column="47" lean-forward="true" selection-start-line="227" selection-start-column="47" selection-end-line="227" selection-end-column="47" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
             <element signature="e#164#1911#0" />
@@ -395,8 +397,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="35">
-          <caret line="490" column="29" lean-forward="true" selection-start-line="490" selection-start-column="29" selection-end-line="490" selection-end-column="29" />
+        <state relative-caret-position="260">
+          <caret line="1852" column="27" selection-start-line="1852" selection-start-column="27" selection-end-line="1852" selection-end-column="27" />
           <folding>
             <element signature="e#223#1597#0" />
             <element signature="e#1599#2595#0" />
@@ -407,6 +409,7 @@
             <element signature="e#7211#7650#0" />
             <element signature="e#7652#8083#0" />
             <element signature="e#8085#8511#0" />
+            <element signature="e#8513#11914#0" />
             <element signature="e#11916#12349#0" />
             <element signature="e#12351#13237#0" />
             <element signature="e#13239#14011#0" />
@@ -424,7 +427,6 @@
             <element signature="e#25176#26325#0" />
             <element signature="e#34897#36046#0" />
             <element signature="e#26327#27824#0" />
-            <element signature="e#42448#43906#0" />
             <element signature="e#27826#28321#0" />
             <element signature="e#28323#28584#0" />
             <element signature="e#28586#28837#0" />
