@@ -218,5 +218,12 @@ void loadTextures() {
     loadTextureFromFile("images/cortina2.jpeg", 39);
     loadTextureFromFile("images/cortina 3.png", 40);
     loadTextureFromFile("images/futebol.jpg", 41);
+    loadTextureFromFile("images/travesseiro.jpg", 42);
+    loadTextureFromFile("images/cama2.png",43);
+    loadTextureFromFile("images/cama3.png",44);
+    loadTextureFromFile("images/cama4.png",45);
+    loadTextureFromFile("images/cabeceira.jpg",46);
+    loadTextureFromFile("images/bookcima.jpg",47);
+    loadTextureFromFile("images/bookfrente.jpg",48);
 
 }

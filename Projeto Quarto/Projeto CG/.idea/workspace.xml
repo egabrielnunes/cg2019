@@ -12,13 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="47e2f7ad-0f5c-40f2-a10c-370544f19a8a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/images/basquete2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/futebol.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/mapa.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/mapa.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cama2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cama3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/cama4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/travesseiro.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeFiles/Projeto_CG.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/basquete.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/basquete.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projeto_CG" beforeDir="false" afterPath="$PROJECT_DIR$/Projeto_CG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/texture.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/texture.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -32,11 +33,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="1851" column="39" selection-start-line="1851" selection-start-column="39" selection-end-line="1851" selection-end-column="39" />
+            <state relative-caret-position="810">
+              <caret line="1855" column="46" selection-start-line="1855" selection-start-column="46" selection-end-line="1855" selection-end-column="46" />
               <folding>
                 <element signature="e#223#1597#0" />
                 <element signature="e#1599#2595#0" />
@@ -65,9 +66,13 @@
                 <element signature="e#25176#26325#0" />
                 <element signature="e#34897#36046#0" />
                 <element signature="e#26393#26449#0" />
-                <element signature="e#26327#27824#0" />
+                <element signature="e#42448#43906#0" />
                 <element signature="e#27826#28321#0" />
+                <element signature="e#28323#28584#0" />
                 <element signature="e#28586#28837#0" />
+                <element signature="e#28839#29102#0" />
+                <element signature="e#29104#29388#0" />
+                <element signature="e#29390#29783#0" />
                 <element signature="e#29785#30384#0" />
                 <element signature="e#30386#30890#0" />
               </folding>
@@ -75,20 +80,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file:///Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="2728" column="12" selection-start-line="2728" selection-start-column="12" selection-end-line="2728" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/texture.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-17">
-              <caret line="219" column="43" selection-start-line="219" selection-start-column="43" selection-end-line="219" selection-end-column="43" />
+            <state relative-caret-position="394">
+              <caret line="208" column="46" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
                 <element signature="e#164#1911#0" />
@@ -101,9 +97,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>front</find>
-      <find>GL_Trian</find>
-      <find>roof</find>
       <find>back</find>
       <find>roo</find>
       <find>floor</find>
@@ -130,7 +123,10 @@
       <find>draw</find>
       <find>drawBall</find>
       <find>baq</find>
+      <find>trave</find>
+      <find>cama</find>
       <find>bas</find>
+      <find>travess</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -238,12 +234,12 @@
       <workItem from="1575318759050" duration="712000" />
       <workItem from="1580073491087" duration="19999000" />
       <workItem from="1580911041594" duration="5628000" />
-      <workItem from="1581019195171" duration="24833000" />
+      <workItem from="1581019195171" duration="29318000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="125786000" />
+    <option name="totallyTimeSpent" value="130271000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -394,21 +390,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/texture.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-17">
-          <caret line="219" column="43" selection-start-line="219" selection-start-column="43" selection-end-line="219" selection-end-column="43" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#164#1911#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="1851" column="39" selection-start-line="1851" selection-start-column="39" selection-end-line="1851" selection-end-column="39" />
+        <state relative-caret-position="810">
+          <caret line="1855" column="46" selection-start-line="1855" selection-start-column="46" selection-end-line="1855" selection-end-column="46" />
           <folding>
             <element signature="e#223#1597#0" />
             <element signature="e#1599#2595#0" />
@@ -437,11 +422,26 @@
             <element signature="e#25176#26325#0" />
             <element signature="e#34897#36046#0" />
             <element signature="e#26393#26449#0" />
-            <element signature="e#26327#27824#0" />
+            <element signature="e#42448#43906#0" />
             <element signature="e#27826#28321#0" />
+            <element signature="e#28323#28584#0" />
             <element signature="e#28586#28837#0" />
+            <element signature="e#28839#29102#0" />
+            <element signature="e#29104#29388#0" />
+            <element signature="e#29390#29783#0" />
             <element signature="e#29785#30384#0" />
             <element signature="e#30386#30890#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texture.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="394">
+          <caret line="208" column="46" selection-start-line="208" selection-start-column="46" selection-end-line="208" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#164#1911#0" />
           </folding>
         </state>
       </provider>
